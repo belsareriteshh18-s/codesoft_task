@@ -6,24 +6,33 @@
     <title>Ritesh-portfolio</title>
     <link rel="icon" type="image/x-icon" href="RItesh__.png">
     <link rel="stylesheet" href="portfolio.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body>
+ <div id="loader">
+    <div class="spinner"></div>
+    <h2>Loading...</h2>
+</div>
+   
     <header>
       <div class="name">
        <span class="first">Ritesh</span>
        <span>Belsare</span>
       </div> 
         <div class="Navigation">
-            <a href="portfolio.html">Home</a>
+            <a href="#heroSec">Home</a>
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
              <a href="#skills">Skill</a>
             <a href="#Contact">Contact</a>
         </div>
+      
     </header>
-   <div class="heroSec">
+   
+   <div class="heroSec" id="heroSec">
+   <button id="music"><i class="fa-solid fa-music"></i></button>
 
+<audio id="bgMusic" src="portfolio.mp3"></audio>
     <div class="intro">
         <p>Hey, I'm</p>
 
@@ -41,7 +50,7 @@
     </div>
 
     <div class="aboutImage">
-        <img src="RItesh__.png" alt="Ritesh">
+         <img src="RItesh__.png" alt="RiteshImg">
     </div>
 
 </div>
@@ -330,5 +339,7 @@
     </div>
 
 </footer>
+
+<script src="portfolio.js"></script>
 </body>
 </html>
